@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #eac926;
+    font-family: "Roboto", sans-serif;  
+}
+.main-header{
+    padding: 20px;
+}
+.hamburguer-buttom{
+    background-color: #03264c;
+    color: #ffffff;
+    display: block; /* <-- necesario para que las demás funcionen */
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+}
+.logo{
+    width: 200px;
+}
+
+.main-navbar{
+    display: none; /* <-- vista mobile: none */
+}
+
+.main-navbar ul{  /* <-- la etiqueta ul */
+   list-style: none;   
+    margin: 0;
+    padding: 0;
+}
+.main-navbar a{
+    text-decoration: none;  
+    color: #222222; 
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+}
+.container_ultimas_visitas,
+.container_ofertas {
+
+    width:100%;
+}  
+
+.articulo-individual{
+   border: 2px red solid;
+/*   background-color: white; width: 360px;*/
+}
+.articulo-descripcion{
+    border-top: 2px solid gray;
+/*   position: relative; */
+}
+i{
+    color: green;
+    font-size: 2em;
+}
+i .fa-truck-fast{
+/*   position: absolute;  */
+    top: -20px;
+    right: 0;
+}
+form{
+    background-color: #777;/* greenyellow; */
+    border: 1px dashed red;
+    padding: 10px;
+    color: #fafafa;
+    font-size: 1.2em;
+}
+input{
+    border: 0;
+    outline: none;
+}
+.field{
+    background-color:#ccc; 
+    border: 1px solid #222;
+    font-size: 1.2em;
+    margin: 6px;
+    padding: 8px;
+}
+.field:focus{
+    border: 2px solid #eac926;;
+}
+.btn{
+    background-color: cyan;
+    font-size: 1.4em;
+    padding: 5px;
+    border-radius: 5px;
+}
+@media(min-width: 361px){
+    .container_ultimas_visitas,
+    .container_ofertas {
+         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }     
+}
+/* mediaqueri para tablets */
+@media(min-width: 760px){
+    .main-header-top-bar{
+        border: dotted 2px red;
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+    }
+    .hamburguer-buttom{
+        display: none;
+    }
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{  /* <-- para las 2 listas (ul)*/
+        display: flex;
+    }
+    .main-navbar li{ /* <-- para c/elemento li dentro de ul*/
+        margin: 0 5px;
+    }
+}
+/* mediaqueri para desktop */
+@media(min-width: 1200px){
+    -logo{
+        width: 260px;
+    }
+    .main-container{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main-header-top-bar,.main-navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main-header-top-bar{
+        align-items: center;
+    }
+    .copy-header{
+        margin: 0;
+        max-width: none;
+        font-size: 22px; /* <-- lo agrando en vista=desktop*/
+    }
+    .main-navbar{
+        margin-top: 40px;
+    }
+    .main-navbar li{ /* <-- para c/elemento li dentro de ul*/
+        margin: 0 5px
+    }
+    .main-navbar a{ /* <-- para c/elemento li dentro de ul*/
+        margin: 0 5px    
+    }
+    .footer-container{
+        max-width: 1200px;
+        margin: auto;
+    }
+}

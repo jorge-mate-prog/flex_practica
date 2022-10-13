@@ -1,0 +1,34 @@
+[
+    {
+        "id": "1",
+        "name":"tabla_surf",
+        "category":"acuatic",
+        "precio":"49.50",
+        "descuento":"15",
+        "img":"tabla-k4qubEK.png"
+    },
+    {
+        "id": 2,
+        "name":"roca_surf",
+        "category":"acuatic",
+        "precio":"39.50",
+        "descuento":"12",
+        "img":"roca-sf76emp.png"
+    },
+    {
+        "id": 3,
+        "name":"tiburon_surf",
+        "category":"acuatic",
+        "precio":"89.50",
+        "descuento":"25",
+        "img":"tiburon-RGqQuPS.png"
+    },
+    {
+        "id": 4,
+        "name":"Homero Sapiens",
+        "category":"entertainment",
+        "precio":"79.50",
+        "descuento":"22",
+        "img":"f891qhc.jpg"
+    }
+]

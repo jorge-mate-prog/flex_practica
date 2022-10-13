@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head'); %> 
+<body>
+    <%- include('../partials/headerUsers'); %> 
+    <main class="main-container">
+        <h1>Estoy en FLEX PRACTICA</h1>
+        <h2>Usuarios Registro</h2>
+        <form action="users/crearUs" method="post">
+            <label for="name" name="name">Name</label>
+            <input class="field" type="text" name="name">
+            <br>
+            <label for="age" name="name">Age</label>
+            <input class="field" type="text" name="age">
+            <br>
+            <label for="born" name="name">Born</label>
+            <input class="field" type="text" name="born">
+            <br>
+            <label for="study" name="name">Study</label>
+            <input class="field" type="text" name="study">
+            <br>
+            <button class="btn btn-enviar" type="submit" value="--">REGISTRAR</button>
+        </form>
+    </main>
+    <%- include('../partials/footer'); %> 
+</body>
+</html>

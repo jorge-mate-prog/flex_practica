@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include('../partials/head'); %> 
+<body>
+    <%- include('../partials/headerProducts'); %> 
+    <main class="main-container">
+        <h1>Estoy en FLEX PRACTICA</h1>
+        <h2>REGISTRO</h2>
+        <h3>Crear Producto</h3>
+        <section>
+            <form action="/products/crearProductos" method="POST">
+                <h3>REGISTRAR UN PRODUCTO.</h3>
+                <label for="id">id</label>
+                <input class="field" type="number" name="id">
+               <br>
+                <label for="nombre">Nombre</label>
+                <input class="field" type="text" name="nombre">
+               <br>
+               <label for="category">Categoria</label>
+                <input class="field" type="text" name="category">
+               <br>
+               <label for="precio">Precio</label>
+                <input class="field" type="number" name="precio">
+               <br>
+               <label for="descuento">Descuento</label>
+                <input class="field" type="number" name="descuento">
+               <br>
+<!--                <label for="edad">Edad</label>
+                <input type="text" name="edad">
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email">--> 
+                <br>
+                <input class="btn btn-enviar" type="submit" value="-ENVIAR-" >
+                                                
+            </form>
+        </section>
+    </main>
+    <%- include('../partials/footer'); %> 
+</body>
+</html>

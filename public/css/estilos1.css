@@ -1,0 +1,135 @@
+/*
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+Media queries:
+0-480: smaller smartphones
+481-768: tablets & larger smartphones
+769-1279: Laptops, larger tablets, and small desktops
+1280: larger desktops and monitors
+body{
+    background: red;
+}
+@media (min-width: 460px){
+    Tablets
+}
+@media (min-width: 768px){
+    Laptop
+}
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif;
+}
+i{
+    font-size: 2em;
+}
+.contenedor_logo{
+    width: 100%;
+/*    display: flex;  */
+}
+.barra-busqueda{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 370px;  /* 30vw; */
+    padding: 10px;
+}
+.fa-magnifying-glass{
+    height: 15%;
+}
+.texto_manito{
+    text-align: center;
+}
+nav{
+    font-size: 12px;
+    display: none;
+}
+nav ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.burger-menu{
+ /*   display: flex;  */
+    text-align: center;
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+}
+.fa-bars{
+    color: white;
+}
+.img_banner{
+    width: 100%;
+}
+.contenedor_main{
+    margin: 0 auto;  
+    width: 90%;
+    height: auto;
+}
+.productos{
+    background-color: cyan;
+}
+.article_producto{
+/*    display: flex;  */
+    margin: 0 auto;
+    width: 100%;
+    background-color:#ebebeb;
+    margin-bottom: 10px;
+}
+.box_descripcion{
+    border-top: black; /*1px solid #ebebeb;  */
+    padding: 15px;
+    position: relative;  
+}
+.fa-truck{
+    color: #39b54a;
+    position:absolute;
+    right: 0;
+    top: 0;
+}
+.footer{
+    text-align: center;
+}
+.parrafo_footer{
+    margin-bottom: 10px;
+}
+.parrafo_footer i{
+    color: blue;
+}
+/* Tablets */
+@media(min-width: 361px){
+ /*   .contenedor_logo{
+        display: flex;
+    } */
+    nav{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .h4_descripcion_nombre{
+        display: none;
+    }
+    .contenedor_main{
+        display: flex;
+    }
+    .article_producto{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+/* DESKTOP */
+@media (min-width: 769px){
+
+}

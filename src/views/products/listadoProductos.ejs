@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include('../partials/head'); %> 
+<body>
+    <%- include('../partials/headerProducts'); %> 
+    <main class="main-container">
+        <h1>Estoy en FLEX PRACTICA</h1>
+        <h2>Productos</h2>
+        <h3>listado de productos</h3>
+        <% productos.forEach(producto => { %>
+            <%= producto.id %>
+            <%= producto.name %>
+            <%= producto.category %>
+            <%= producto.precio %>
+            <%= producto.descuento %> 
+       <% }) %> 
+    </main>
+    <%- include('../partials/footer'); %> 
+</body>
+</html>

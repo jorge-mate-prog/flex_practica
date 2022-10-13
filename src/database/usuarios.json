@@ -1,0 +1,20 @@
+[
+    {
+       "name": "Jorge",
+        "age": 50,
+        "born": "Rosario",
+        "study": "programming"
+    },
+    {
+        "name": "Mario",
+        "age": 45,
+        "born": "Santa Fe",
+        "study": "medicine"
+    },
+    {
+        "name": "Ana",
+        "age": 47,
+        "born": "San Nicolas",
+        "study": "architecture"
+    }
+]
