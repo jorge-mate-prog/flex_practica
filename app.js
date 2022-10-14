@@ -15,6 +15,13 @@ app.use(express.static(path.join(__dirname,'./public')));
 // para poder usar los métodos PUT y DELETE:
 app.use(methodOverride('_method'));
 
+// capturar la información de POST:
+app.use(express.urlencoded({ extended: false}));
+app.use(express.json());
+// con body-parser
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
+
 // después de llevar la función a router, le digo que uso:
 app.use(router);
 app.use(routerProd);

@@ -12,6 +12,6 @@ routerUsers.get('/listadoUs',usersControlador.listado);
 // });
 
 routerUsers.get('/registroUs',usersControlador.register);
-routerUsers.post('/crearUs',usersControlador.create);
+routerUsers.post('/saveUs',usersControlador.save);
 
 module.exports= routerUsers;
