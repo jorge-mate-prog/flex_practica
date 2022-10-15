@@ -4,7 +4,7 @@ const path = require('path');
 const { encode } = require('punycode');
 
 const usersJSON = fs.readFileSync(path.resolve(__dirname,'../database/usuarios.json'));
-const usersN = JSON.parse(usersJSON,(encode,'utf-8'));
+const usersN = JSON.parse(usersJSON);
 let nuUsuariosJSON;
 
 const usersControlador = {
@@ -26,6 +26,8 @@ const usersControlador = {
     //     console.log(req.body);  <--funciona
         let dato = req.body;
         let userNu = {
+            id: usersN.length +1,
+            genero:dato.genero,
             name: dato.name,
             age: dato.age,
             born: dato.born,

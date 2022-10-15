@@ -7,13 +7,25 @@
         <h1>Estoy en FLEX PRACTICA</h1>
         <h2>USERS</h2>
         <h3>Listado de Usuarios</h3>
+        <section class="container-users">
+        
         <% usersN.forEach(usuario => {  %>
-            <%= usuario.id %> 
-            <%= usuario.name %>
-            <%= usuario.age%>
-            <%= usuario.born %>
-            <%= usuario.study %> 
-       <% }) %> 
+            
+            <article class="articulo-user">
+                <img class="img-genero" src=<%= "/img/image/"+usuario.genero+".png" %> alt="">
+                <div class="container-top">
+                    <h3 class="user-name">Id: <%= usuario.id %> </h3>
+                    <h3 class="user-name">Nombre:  <%= usuario.name %> </h3>
+                    <p class="user-info">Edad:  <%= usuario.age %> </p>
+                    <p class="user-info">Origen:  <%= usuario.born %> </p>
+                    <p class="user-info">Estudios:  <%= usuario.study %> </p>
+
+                </div>
+            </article>
+            <% }) %>
+        
+        </section>
+        
     </main>
     <%- include('../partials/footer'); %> 
 </body>

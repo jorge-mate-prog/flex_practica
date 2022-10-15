@@ -7,13 +7,23 @@
         <h1>Estoy en FLEX PRACTICA</h1>
         <h2>Productos</h2>
         <h3>listado de productos</h3>
-        <% productos.forEach(producto => { %>
-            <%= producto.id %>
-            <%= producto.name %>
-            <%= producto.category %>
-            <%= producto.precio %>
-            <%= producto.descuento %> 
-       <% }) %> 
+        <section class="container-users">
+        
+            <% productosN.forEach(producto => {  %>
+                
+                <article class="articulo-user">
+                    <div class="container-top">
+                        <h3 class="user-name">Id:  <%= producto.id %> </h3>
+                        <h3 class="user-name">Nombre:  <%= producto.name %> </h3>
+                        <p class="user-info">Category:  <%= producto.category %> </p>
+                        <p class="user-info">Precio:  <%= producto.precio %> </p>
+                        <p class="user-info">Descuento:  <%= producto.descuento %> </p>
+    
+                    </div>
+                </article>
+                <% }) %>
+            
+        </section>
     </main>
     <%- include('../partials/footer'); %> 
 </body>

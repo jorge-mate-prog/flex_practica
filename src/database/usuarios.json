@@ -1,1 +1,42 @@
-[{"name":"Jorge","age":50,"born":"Rosario","study":"programming"},{"name":"Mario","age":45,"born":"Santa Fe","study":"medicine"},{"name":"Ana","age":47,"born":"San Nicolas","study":"architecture"},{"name":"Sofía","age":"29","born":"Cordoba","study":"tecnic"}]
+[
+    {
+        "id": 1,
+        "genero":"masculino",
+        "name": "Jorge",
+        "age": 50,
+        "born": "Rosario",
+        "study": "programming"
+    },
+    {
+        "id": 2,
+        "genero":"masculino",
+        "name": "Mario",
+        "age": 45,
+        "born": "Santa Fe",
+        "study": "medicine"
+    },
+    {
+        "id": 3,
+        "genero":"femenino",
+        "name": "Ana",
+        "age": 47,
+        "born": "San Nicolas",
+        "study": "architecture"
+    },
+    {
+        "id": 4,
+        "genero":"femenino",
+        "name": "Sofía",
+        "age": "29",
+        "born": "Cordoba",
+        "study": "tecnic"
+    },
+    {
+        "id": 5,
+        "genero":"masculino",
+        "name": "Pedro",
+        "age": "48",
+        "born": "Mendoza",
+        "study": "philosophy"
+    }
+]

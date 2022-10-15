@@ -13,7 +13,7 @@ routerProd.get('/registroProductos',productoControlador.register);
 //  function(req,res){
 //     res.send('Estoy en products/REGISTROProductos');
 // });
-routerProd.post('/crearProductos',productoControlador.create);
+routerProd.post('/registroProductos',productoControlador.save);
 //productoControlador.register);
 // routerProd.get('/products/crearProductos',productoControlador.create)
 // routerProd.post('/products/crearProductos',productoControlador.createN);
