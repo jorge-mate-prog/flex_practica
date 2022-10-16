@@ -6,9 +6,15 @@
     <main class="main-container">
         <h1>Estoy en FLEX PRACTICA</h1>
         <h2>Usuarios Registro</h2>
-        <form action="/registroUs" method="POST">
-            <label for="genero" type="radio" name="m">Masculino</label>
-            <label for="genero" type="radio" name="f">Femenino</label>
+        <form action="registroUs" method="POST">
+           <fieldset>
+            <legend>Select "genero":</legend>
+            <input class="radio" type="radio" name="genero" value="masculino" >
+            <label >Masculino</label>
+            <input class="radio" type="radio" name="genero" value="femenino" >
+            <label >Femenino</label>
+        </fieldset>
+            <br>
             <label for="name" name="name">Name</label>
             <input class="field" type="text" name="name">
             <br>

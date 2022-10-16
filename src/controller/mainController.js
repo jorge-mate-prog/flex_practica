@@ -1,8 +1,11 @@
-const mainController = {
+// Main Controlador
+const fs = require('fs');
+
+const controladorMain ={
     index: function(req,res){
-    //    res.send('Estamos en raiz en controller!');
+    //    res.send('El GET funciona! en controller');
         res.render('pages/index');
     }
 }
 
-module.exports = mainController;
+module.exports = controladorMain;

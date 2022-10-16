@@ -1,6 +1,7 @@
-//
+// Users Controllers
 const fs = require('fs');
 const path = require('path');
+const multer = require('multer');
 const { encode } = require('punycode');
 
 const usersJSON = fs.readFileSync(path.resolve(__dirname,'../database/usuarios.json'));
@@ -37,22 +38,7 @@ const usersControlador = {
         let nuUsuariosJSON = JSON.stringify(usersN, {encoding: "utf-8"});
         fs.writeFileSync(path.resolve(__dirname,'../database/usuarios.json'),nuUsuariosJSON);
         
-        res.redirect('users/users');
-        // let usuariosArr = JSON.parse(path.resolve(__dirname,'../database/usuarios.json'));
-        // let ultimoUs = usuariosArr.pop();
-        // usuariosArr.push(ultimoUs);
-        // let nuevoUs = {
-        //     id: ultimoUs.id +1,
-        //     nombre: req.body.nombre,
-        //     age: req.body.age,
-        //     born: req.body.born,
-        //     study: req.body.study
-        // }
-        // usuariosArr.push(nuevoUs);
-       //console.log(nuevoUs);
-    //    let nuevoUsuarios = JSON.stringify(usuariosArr,null,2);
-    //    fs.writeFileSync(path.resolve(__dirname,'/usuarios.json'),nuevoUsuarios);
-    //    res.redirect('users/users');
+        res.redirect('listadoUs');
     }  
 }
 
